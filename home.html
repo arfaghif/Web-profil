@@ -11,6 +11,7 @@
         body{
             margin: 0;
             background: white;
+
         }
         .MyClass{
             width: 1000px;
@@ -19,8 +20,10 @@
             text-align: center;
             margin: auto;
             margin-top: 5%;
+            margin-bottom: 5%;
             color: white;
             font-family: Arial;
+            height: 300px;
         }
         .MyClass h1{
             font-size:  40 px;
@@ -32,7 +35,7 @@
             color: red;
         }
         nav{
-            background: rgba(0,0,0,0.3);
+            background: #00BFFF;
             width: 100% ;
             overflow: auto;
         }
@@ -50,18 +53,27 @@
             text-decoration: none;
             text-align: center; 
             font-size: 17px;
-            color:  black;
+            color:  white;
             padding: 20px 10px;
-            font-family: Arial;
+            font-family: Comic Sans MS, Arial;
         }
         nav a:hover{
-            background: skyblue;
+            background: aquamarine;
             color: black;
 
         }
         footer{
-            background-color: blue;
-            color: aquamarine;
+            padding: 10 px;
+            font-size: 17px;
+            text-align: center;
+            background: #00BFFF;
+            
+        }
+        footer img{
+            width: 80px;
+        }
+        footer img:hover{
+            width: 120px;
         }
     </style>
 
@@ -80,13 +92,12 @@
             <div class= "MyAlert">Under Maintanance !!</div>
             
         </div>
-    </body>
+    
 
-    <footer>
-        <ul>
-            <li>Line</li>
-            <li>Instagram</li>
-            <li>Github</li>
-        </ul>
-    </footer>
+        <footer>
+            <img src="line.png" alt= "My line" onclick="openInNewTab('https://line.me/ti/p/~arfa_senpai')"> 
+            <img src="ig.png" alt= "My instagram" onclick="openInNewTab('https://instagram.com/arfaghif')"> 
+            <img src="github.png" alt= "My github" onclick="openInNewTab('https://github.com/arfaghif')"> 
+        </footer>
+    </body>
 </html>

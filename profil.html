@@ -15,10 +15,11 @@
         }
         body{
             margin: 0;
-            background: gray;
+            background:#E0FFFF;
+
         }
         nav{
-            background: #594848;
+            background: #00BFFF;
             width: 100% ;
             overflow: auto;
         }
@@ -35,16 +36,23 @@
             display: block;
             text-decoration: none;
             text-align: center; 
-            background: #594848;
             font-size: 17px;
             color:  white;
             padding: 20px 10px;
-            font-family: Arial;
+            font-family: Comic Sans MS, Arial;
         }
         nav a:hover{
-            background: skyblue;
+            background: aquamarine;
             color: black;
 
+        }
+        .Biodata {
+            font-family: Trebuchet MS, "Nunito",sans-serif;
+            height: 1000px;
+            line-height: 1.5cm;
+            letter-spacing: 1px;
+            padding-left: 2ch;
+            color: #4682B4;
         }
         img{
             width: 200px;
@@ -55,6 +63,44 @@
         table{
             vertical-align: top;
         }
+        footer{
+            padding: 10 px;
+            font-size: 17px;
+            text-align: center;
+            background: #00BFFF;
+            
+        }
+        footer img{
+            width: 80px;
+        }
+        footer img:hover{
+            width: 120px;
+        }
+        .button {
+            background-color: #00BFFF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+        .button:hover{
+            background-color: aquamarine;
+            color: black;
+        }
+        .input {
+            background-color: lightcyan;
+            border-color: #00BFFF;
+            color: black;
+            padding: 2px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }        
     </style>
 
     <body>
@@ -82,7 +128,7 @@
                     <td>: Jl Bebedilan no 14, Kota Tasikmalaya</td>
                 </tr>
                 <tr>
-                    <td>Kegemaranr</td>
+                    <td>Kegemaran</td>
                     <td>: Menulis dan Menonton</td>
                 </tr>
                 <tr>
@@ -99,10 +145,10 @@
                 </tr>
                 <tr>
                     <td rowspan="2" style="vertical-align: text-top;">  Keorganisasian</td>
-                    <td>: Wakil ketua Keluarga Mahasiswa Tasikmalaya ITB</td>
+                    <td>: -Wakil ketua Keluarga Mahasiswa Tasikmalaya ITB</td>
                 </tr>
                 <tr>
-                    <td>: Staf Divisi Pengabdian Masyarakat Himpunan Mahasiswa Informatika ITB</td>
+                    <td>  -Staf Divisi Pengabdian Masyarakat Himpunan Mahasiswa Informatika ITB</td>
                 </tr>
 
 
@@ -111,15 +157,17 @@
             </br>
             </br>
             <form  onsubmit="openInNewTab('CV 2020.pdf')" id = "request" style = "display: none;">
-                Enter name: <input type="text" name="Your Name" required></br>
-                Enter name: <input type="email" name="aaa@bb.ccc" required></br>
-                <input type="submit" value="Submit">
+                Enter Your Name: <input class="input" type="text" name="Your Name" required></br>
+                Enter Your Email: <input class="input" type="email" name="aaa@bb.ccc" required></br>
+                <input class="button" type="submit" value="View My CV" >
               </form>
-            </div>
-            <button type="button" onclick="document.getElementById('request').style.display ='block',document.getElementById('requestbutton').style.display ='none'" id="requestbutton">CLick to Request Download My CV</button>
-
-
-            
+            <button class="button" type="button" onclick="document.getElementById('request').style.display ='block',document.getElementById('requestbutton').style.display ='none'" id="requestbutton">Click to Request Download My CV</button>   
         </div>
+
+        <footer>
+            <img src="line.png" alt= "My line" onclick="openInNewTab('https://line.me/ti/p/~arfa_senpai')"> 
+            <img src="ig.png" alt= "My instagram" onclick="openInNewTab('https://instagram.com/arfaghif')"> 
+            <img src="github.png" alt= "My github" onclick="openInNewTab('https://github.com/arfaghif')"> 
+        </footer>
     </body>
 </html>
