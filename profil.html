@@ -3,7 +3,12 @@
     <head>
         <title> My Profile Website </title>
     </head>
-
+    <script>
+    function openInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
+    </script>
     <style>
         *{
             box-sizing: border-box;
@@ -41,6 +46,15 @@
             color: black;
 
         }
+        img{
+            width: 200px;
+            padding-left: 2ch;
+            padding-top: 2ch;
+            padding-bottom: 2ch;
+        }
+        table{
+            vertical-align: top;
+        }
     </style>
 
     <body>
@@ -52,5 +66,60 @@
                 <li><a href="CV 2020.pdf"> CV </a></li>
             </ul>
         </nav>
+        <img src="Me.jpg" alt= "My Photo"> 
+        <div class = "Biodata">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>: Naufal Arfananda Ghifari</td>
+                </tr>
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>: Tasikmalaya, 17 Juni 2000</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>: Jl Bebedilan no 14, Kota Tasikmalaya</td>
+                </tr>
+                <tr>
+                    <td>Kegemaranr</td>
+                    <td>: Menulis dan Menonton</td>
+                </tr>
+                <tr>
+                    <td>Pekerjaan</td>
+                    <td>: Mahasiswa Bidang Studi Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <td>Universitas</td>
+                    <td>: Institut Teknologi Bandung</td>
+                </tr>
+                <tr>
+                    <td>Alamat Universitas</td>
+                    <td>: Jalan Ganesha no 10, Kota Bandung</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="vertical-align: text-top;">  Keorganisasian</td>
+                    <td>: Wakil ketua Keluarga Mahasiswa Tasikmalaya ITB</td>
+                </tr>
+                <tr>
+                    <td>: Staf Divisi Pengabdian Masyarakat Himpunan Mahasiswa Informatika ITB</td>
+                </tr>
+
+
+            </table>
+            </br>
+            </br>
+            </br>
+            <form  onsubmit="openInNewTab('CV 2020.pdf')" id = "request" style = "display: none;">
+                Enter name: <input type="text" name="Your Name" required></br>
+                Enter name: <input type="email" name="aaa@bb.ccc" required></br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            <button type="button" onclick="document.getElementById('request').style.display ='block',document.getElementById('requestbutton').style.display ='none'" id="requestbutton">CLick to Request Download My CV</button>
+
+
+            
+        </div>
     </body>
 </html>

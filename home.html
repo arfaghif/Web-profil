@@ -10,10 +10,29 @@
         }
         body{
             margin: 0;
-            background: gray;
+            background: white;
+        }
+        .MyClass{
+            width: 1000px;
+            background:rgba(0,0,0,0.4);
+            padding: 40px;
+            text-align: center;
+            margin: auto;
+            margin-top: 5%;
+            color: white;
+            font-family: Arial;
+        }
+        .MyClass h1{
+            font-size:  40 px;
+            letter-spacing: 4px;
+            font-weight: 100;
+
+        }
+        .MyAlert{
+            color: red;
         }
         nav{
-            background: #594848;
+            background: rgba(0,0,0,0.3);
             width: 100% ;
             overflow: auto;
         }
@@ -30,7 +49,6 @@
             display: block;
             text-decoration: none;
             text-align: center; 
-            background: #594848;
             font-size: 17px;
             color:  black;
             padding: 20px 10px;
@@ -40,6 +58,10 @@
             background: skyblue;
             color: black;
 
+        }
+        footer{
+            background-color: blue;
+            color: aquamarine;
         }
     </style>
 
@@ -52,7 +74,19 @@
                 <li><a href="CV 2020.pdf""> CV </a></li>
             </ul>
         </nav>
-
-        <h1>Welcome on My Personal Website</h1>
+        <div class="MyClass">
+            <h1>Welcome on My Personal Website</h1>
+            <h5>Naufal Arfananda Ghifari</h5>
+            <div class= "MyAlert">Under Maintanance !!</div>
+            
+        </div>
     </body>
+
+    <footer>
+        <ul>
+            <li>Line</li>
+            <li>Instagram</li>
+            <li>Github</li>
+        </ul>
+    </footer>
 </html>
