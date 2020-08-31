@@ -13,5 +13,7 @@ Pelajari bahasa HTML, CSS, dan Javascript dasar.
 Buat satu halaman web dengan menggunakan HTML, CSS dan JavaScript sederhana yang menampilkan informasi tentang diri Anda
 ## Sumber pembelajaran yang digunakan 
 *Courses* dari w3school dan sololearn, youtube video, serta forum tanya jawab stackoverflow
+# Screenshot laman
+![alt text](profil-page.png)
 # *Last Update*
 31 Agustus 2020 
