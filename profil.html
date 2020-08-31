@@ -2,118 +2,16 @@
 <html>
     <head>
         <title> My Profile Website </title>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
     </head>
-    <script>
-    function openInNewTab(url) {
-        var win = window.open(url, '_blank');
-        win.focus();
-    }
-    </script>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            margin: 0;
-            background:#E0FFFF;
-
-        }
-        nav{
-            background: #00BFFF;
-            width: 100% ;
-            overflow: auto;
-        }
-        ul{
-            margin : 0;
-            padding:   0;
-            list-style: none;
-        }
-        li{
-            float:  left;
-        }
-        nav a{
-            width: 120px;
-            display: block;
-            text-decoration: none;
-            text-align: center; 
-            font-size: 17px;
-            color:  white;
-            padding: 20px 10px;
-            font-family: Comic Sans MS, Arial;
-        }
-        .currentPage{
-            background: #4682B4;
-        }
-        nav a:hover{
-            background: aquamarine;
-            color: black;
-
-        }
-
-        .Biodata {
-            font-family: Trebuchet MS, "Nunito",sans-serif;
-            height: 1000px;
-            line-height: 1.5cm;
-            letter-spacing: 1px;
-            padding-left: 2ch;
-            color: #4682B4;
-        }
-        img{
-            width: 200px;
-            padding-left: 2ch;
-            padding-top: 2ch;
-            padding-bottom: 2ch;
-        }
-        table{
-            vertical-align: top;
-        }
-        footer{
-            padding: 10 px;
-            font-size: 17px;
-            text-align: center;
-            background: #00BFFF;
-            
-        }
-        footer img{
-            width: 80px;
-        }
-        footer img:hover{
-            width: 120px;
-        }
-        .button {
-            background-color: #00BFFF;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-        }
-        .button:hover{
-            background-color: aquamarine;
-            color: black;
-        }
-        .input {
-            background-color: lightcyan;
-            border-color: #00BFFF;
-            color: black;
-            padding: 2px;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-        }        
-    </style>
+    <script src="myScript.js"></script>
 
     <body>
         <nav>
             <ul>
                 <li><a href="home.html"> Home </a></li>
-                <li class="currentPage"><a href="profil.html"> Profil </a></li>
+                <li ><a class="currentPage" href="profil.html"> Profil </a></li>
                 <li><a href="Portofolio.pdf"> Portofolio </a></li>
-                <li><a href="CV 2020.pdf"> CV </a></li>
             </ul>
         </nav>
         <img src="Me.jpg" alt= "My Photo"> 
@@ -132,10 +30,6 @@
                     <td>: Jl Bebedilan no 14, Kota Tasikmalaya</td>
                 </tr>
                 <tr>
-                    <td>Kegemaran</td>
-                    <td>: Menulis dan Menonton</td>
-                </tr>
-                <tr>
                     <td>Pekerjaan</td>
                     <td>: Mahasiswa Bidang Studi Teknik Informatika</td>
                 </tr>
@@ -146,6 +40,10 @@
                 <tr>
                     <td>Alamat Universitas</td>
                     <td>: Jalan Ganesha no 10, Kota Bandung</td>
+                </tr>
+                <tr>
+                    <td>Kegemaran</td>
+                    <td>: Menulis dan Menonton</td>
                 </tr>
                 <tr>
                     <td rowspan="2" style="vertical-align: text-top;">  Keorganisasian</td>
@@ -160,12 +58,12 @@
             </br>
             </br>
             </br>
-            <form  onsubmit="openInNewTab('CV 2020.pdf')" id = "request" style = "display: none;">
+            <form  onsubmit="openInNewTab('CV.pdf')" id = "request" style = "display: none;">
                 Enter Your Name: <input class="input" type="text" name="Your Name" required></br>
                 Enter Your Email: <input class="input" type="email" name="aaa@bb.ccc" required></br>
                 <input class="button" type="submit" value="View My CV" >
               </form>
-            <button class="button" type="button" onclick="document.getElementById('request').style.display ='block',document.getElementById('requestbutton').style.display ='none'" id="requestbutton">Click to Request Download My CV</button>   
+            <button class="button" type="button" id="requestbutton" onclick="showObject('request'),hideObject('requestbutton')" >Click to Request Download My CV</button>   
         </div>
 
         <footer>
