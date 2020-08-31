@@ -1,7 +1,7 @@
 # Web-profil
 Merupakan sebuah website sederhana yang isinya berupa profil biodata, foto, dan akun media sosial dari pembuat profil. Tersedia juga tombol yang membuat pembaca dapat me-*request* untuk mengunduh CV pembuat profil.
 # Petunjuk Penggunaan
-Buka file **profil.html** untuk menampilkan Web-profil yang suda dibuat
+Buka file **profil.html** untuk menampilkan Web-profil yang sudah dibuat
 # Dibuat oleh
 ## Naufal Arfananda Ghifari
 13518096 - IF ITB
